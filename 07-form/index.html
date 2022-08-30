@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>Lezione HTML</title>
+	<style>
+		label {
+			display: block
+		}
+	</style>
+</head>
+
+<body>
+<form action="#" method="get">
+	<fieldset>
+		<legend>Non voglio rubarti i soldi, inserisci i tuoi dati</legend>
+	<div>
+		<label for="email">Email</label>
+		<input type="email" id="email" name="email"/>
+		<label for="password">Password</label>
+		<input type="password" id="password" name="pass"/>
+	</div>
+	<div>
+		<label for="name">Nome e cognome</label>
+		<input type="text" id="name" name="name"/>
+		<label for="dob">Data di nascita</label>
+		<input type="date" id="dob" name="dob"/>
+		<label for="tel">Telefono</label>
+		<input type="tel" id="tel" name="tel"/>
+	</div>
+	<div>
+		<label for="plan">Abbonamenti</label>
+		<select id="plan" name="plan">
+			<optgroup label="Prova">
+				<option value="0">Free</option>	
+			</optgroup>
+			<optgroup label="Mensili">
+				<option value="199">4.99€/mese</option>
+				<option value="599">14.99€/mese</option>
+				<option value="1199">19.99€/mese</option>
+			</optgroup>
+		</select>
+		<label for="pro">Piano PRO</label>
+		<input id="pro" name="pro" type="checkbox"/>
+	</div>
+	<div>
+		<label for="cc">Numero Carta</label>
+		<input id="cc" name="cc" type="text"/>
+		<label for="cvc">CVC</label>
+		<input id="cvc" name="cvc" type="text"/>
+		<label for="exp">Scadenza</label>
+		<input id="exp" name="exp" type="date"/>
+		<label for="address">Indirizzo di fatturazione</label>
+		<input type="text" id="address" name="address"/>
+	</div>
+	</fieldset>
+</form>
+</body>
+
+</html>
